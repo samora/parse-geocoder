@@ -20,5 +20,13 @@ module.exports = {
     test.equal('Ghana', secondResult.addressComponents.country.longName);
     test.equal('West Legon, Accra, Ghana', secondResult.formattedAddress);
     test.done();
+  },
+
+  testParse: function (test) {
+    parsedResults = parseGeocoder.parse(data);
+    secondResult = parsedResults[1];
+    test.equal('Ghana', secondResult.addressComponents.country.longName);
+    test.equal('West Legon, Accra, Ghana', secondResult.formattedAddress);
+    test.done();
   }
 };
