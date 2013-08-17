@@ -1,13 +1,13 @@
 {
   "name": "parse-geocoder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parse data returned by geocoder into easily usable format",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "nodeunit test"
   },
   "keywords": [
     "geocoder",
