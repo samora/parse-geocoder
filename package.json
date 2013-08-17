@@ -1,0 +1,24 @@
+{
+  "name": "parse-geocoder",
+  "version": "0.0.1",
+  "description": "Parse data returned by geocoder into easily usable format",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "geocoder",
+    "parse",
+    "data",
+    "google",
+    "maps"
+  ],
+  "author": "Samora Dake",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "~1.3.1"
+  }
+}
