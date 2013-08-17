@@ -38,8 +38,12 @@ var parseResult = exports.parseResult = function (result) {
 };
 
 // parse all the results of geocoder data
-var parseResults = exports.parseResults = function (data) {
-  return _.map(data.results, function (item) {
-    return parseResult(item);
-  });
+var parseResults = exports.parseResults = exports.parse = function (data) {
+  if (data.results) {
+    return _.map(data.results, function (item) {
+      return parseResult(item);
+    });
+  } else {
+    return data;
+  }
 };
