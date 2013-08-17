@@ -2,16 +2,6 @@
 
 var _ = require('lodash');
 
-// Gets all results
-var getResults = exports.getResults = function (data) {
-  return data.results;
-};
-
-// Gets first result
-var getFirst = exports.getFirst = function (data) {
-  return data.results[0];
-};
-
 // Returns a parsed result object containing:
 // addressComponent: hash of address component types 
 //  eg. {

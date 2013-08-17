@@ -4,18 +4,6 @@ var parseGeocoder = require('../index');
 var _ = require('lodash');
 
 module.exports = {
-  testGetResults: function (test) {
-    results = parseGeocoder.getResults(data);
-    test.ok( _.isArray(results) );
-    test.ok( _.size(results) > 0 );
-    test.done();
-  },
-
-  testGetFirst: function (test) {
-    first = parseGeocoder.getFirst(data);
-    test.equal('street_number', first.address_components[0].types[0]);
-    test.done();
-  },
 
   testParseResult: function (test) {
     parsedResult = parseGeocoder.parseResult(data.results[0]);
