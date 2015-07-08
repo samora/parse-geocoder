@@ -33,10 +33,11 @@ var parseResult = exports.parseResult = function (result) {
       addressComponents: addressComponents,
       formattedAddress: formattedAddress,
       geometry: geometry,
-      addressPrecision: addressPrecision,
-      placeId: placeId,
-      partialMatch: partialMatch
+      addressPrecision: addressPrecision
     };
+
+    if( placeId !== undefined ) parsedResult.placeId = placeId;
+    if( partialMatch !== undefined ) parsedResult.partialMatch = partialMatch;
 
     return parsedResult;
 };
