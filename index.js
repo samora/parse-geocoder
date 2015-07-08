@@ -3,9 +3,9 @@
 var _ = require('lodash');
 
 // Returns a parsed result object containing:
-// addressComponent: hash of address component types 
+// addressComponent: hash of address component types
 //  eg. {
-  // country: {longName: 'Ghana', shortName: 'GH'}, 
+  // country: {longName: 'Ghana', shortName: 'GH'},
   // administrative_area_level_1: {longName: 'Greater Accra', shortName: 'Greater Accra'}
 // }
 // formattedAddress: unmodified formatted_address of result
@@ -17,6 +17,8 @@ var parseResult = exports.parseResult = function (result) {
     var formattedAddress = result.formatted_address;
     var geometry = result.geometry;
     var addressPrecision = result.types[0];
+    var placeId = result.place_id
+    var partialMatch = result.partial_match
     var addressComponents = {};
 
     _.forEach(rawAddressComponents, function (component) {
@@ -31,7 +33,9 @@ var parseResult = exports.parseResult = function (result) {
       addressComponents: addressComponents,
       formattedAddress: formattedAddress,
       geometry: geometry,
-      addressPrecision: addressPrecision
+      addressPrecision: addressPrecision,
+      placeId: placeId,
+      partialMatch: partialMatch
     };
 
     return parsedResult;

@@ -14,6 +14,8 @@ module.exports = {
     test.equal('street_address', parsedResult.addressPrecision);
     test.equal(5.6489527, parsedResult.geometry.location.lat);
     test.equal('14 Ato Ahwoi Avenue, Accra, Ghana', parsedResult.formattedAddress);
+    test.equal('ChIJAfv223rwvIcR4U1fC62JsWs', parsedResult.placeId)
+    test.equal(true, parsedResult.partialMatch)
     test.done();
   },
 

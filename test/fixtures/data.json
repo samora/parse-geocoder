@@ -85,7 +85,9 @@
          },
          "types":[
             "street_address"
-         ]
+         ],
+         "partial_match": true,
+         "place_id": "ChIJAfv223rwvIcR4U1fC62JsWs"
       },
       {
          "address_components":[
@@ -161,7 +163,9 @@
          "types":[
             "neighborhood",
             "political"
-         ]
+         ],
+         "partial_match": true,
+         "place_id": "ChIJAfv223rwvIcR4U1fC62JsWs"
       },
       {
          "address_components":[
@@ -229,7 +233,9 @@
          "types":[
             "locality",
             "political"
-         ]
+         ],
+         "partial_match": true,
+         "place_id": "ChIJAfv223rwvIcR4U1fC62JsWs"
       },
       {
          "address_components":[
@@ -289,7 +295,9 @@
          "types":[
             "administrative_area_level_2",
             "political"
-         ]
+         ],
+         "partial_match": true,
+         "place_id": "ChIJAfv223rwvIcR4U1fC62JsWs"
       },
       {
          "address_components":[
@@ -341,7 +349,9 @@
          "types":[
             "administrative_area_level_1",
             "political"
-         ]
+         ],
+         "partial_match": true,
+         "place_id": "ChIJAfv223rwvIcR4U1fC62JsWs"
       },
       {
          "address_components":[
@@ -385,7 +395,9 @@
          "types":[
             "country",
             "political"
-         ]
+         ],
+         "partial_match": true,
+         "place_id": "ChIJAfv223rwvIcR4U1fC62JsWs"
       }
    ],
    "status":"OK"
