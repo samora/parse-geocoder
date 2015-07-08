@@ -1,4 +1,7 @@
-var data = require('./data');
+var fs = require('fs'),
+    path = require('path'),
+    data = JSON.parse(fs.readFileSync(path.join(__dirname,'fixtures','data.json')).toString())
+
 var parseGeocoder = require('../index');
 
 var _ = require('lodash');
