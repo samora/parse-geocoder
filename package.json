@@ -1,6 +1,6 @@
 {
   "name": "parse-geocoder",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Parse data returned by geocoder into easily usable format",
   "main": "index.js",
   "directories": {
