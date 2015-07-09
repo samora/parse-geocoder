@@ -9,7 +9,8 @@ var _ = require('lodash');
 module.exports = {
 
   testParseResult: function (test) {
-    parsedResult = parseGeocoder.parseResult(data.results[0]);
+    var parsedResult = parseGeocoder.parseResult(data.results[0]);
+    // fs.writeFileSync('parseResult.json', JSON.stringify(parsedResult, null, '\t'));
     test.equal('Ghana', parsedResult.addressComponents.country.longName);
     test.equal('street_address', parsedResult.addressPrecision);
     test.equal(5.6489527, parsedResult.geometry.location.lat);
@@ -19,19 +20,10 @@ module.exports = {
     test.done();
   },
 
-  testParseResults: function (test) {
-    parsedResults = parseGeocoder.parseResults(data);
-    secondResult = parsedResults[1];
-    test.equal('Ghana', secondResult.addressComponents.country.longName);
-    test.equal('West Legon, Accra, Ghana', secondResult.formattedAddress);
-    test.equal(undefined, secondResult.placeId);
-    test.equal(undefined, secondResult.partialMatch);
-    test.done();
-  },
-
   testParse: function (test) {
-    parsedResults = parseGeocoder.parse(data);
-    secondResult = parsedResults[1];
+    var parsedResults = parseGeocoder.parse(data);
+    // fs.writeFileSync('parse.json', JSON.stringify(parsedResults, null, '\t'));
+    var secondResult = parsedResults[1];
     test.equal('Ghana', secondResult.addressComponents.country.longName);
     test.equal('West Legon, Accra, Ghana', secondResult.formattedAddress);
     test.done();
