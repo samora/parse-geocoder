@@ -35,7 +35,7 @@ See [parseResult.json](parseResult.json) for sample.
 ### parse
 
 ```javascript
-var result = parseGeocoder.pare(geocoderData);
+var result = parseGeocoder.parse(geocoderData);
 ```
 
 Returns an array of parseResults.
