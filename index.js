@@ -24,7 +24,7 @@ var parseResult = exports.parseResult = function (result) {
     _.forEach(rawAddressComponents, function (component) {
       addressComponents[component.types[0]] = {
         longName: component.long_name,
-        shortName: component.long_name
+        shortName: component.short_name
       };
     });
 
